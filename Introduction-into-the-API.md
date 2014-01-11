@@ -1,5 +1,3 @@
-## General Introduction ##
-
 Hey, welcome to the Stamm Developer Wiki. Great to see that you wanna use the API.
  
 Let me tell you, it's easier to use the API as you thought.
@@ -7,11 +5,11 @@ Let me tell you, it's easier to use the API as you thought.
 Just read the next pages and learn how to work with it.
 
 
-## Where to start ##
+## Where to start
 
 The API is divided in six parts. 
 
-- [**The core part**](Working-with-stamm)
+- [**The core part**](Working-with-Stamm)
 - [**The client part**](Working-with-clients)
 - [**The color part**](Colors-in-Stamm)
 - [**The level part**](Working-with-levels)
@@ -22,7 +20,7 @@ You can use the core, client, color and level part without making a feature,
 for the feature and block part you need to add a feature. 
 
 
-## What are levels ##
+## What are levels
 
 Stamm supports currently up to 100 levels.
 
@@ -30,7 +28,7 @@ There are two kind of levels: Public and private ones.
 
 Public levels are achievable with points by every client, private levels are only for clients with specific admin flags.
 
-Levels are configurated by the server admin in `cfg/stamm/StammLevels.txt`.
+Levels are configured by the server admin in `cfg/stamm/StammLevels.txt`.
 
 This is the default file:
 
@@ -79,14 +77,13 @@ The last level (default disabled) is a private one, it uses a flag string instea
 
 So by default there are 6 levels. The first level always get the ID 1, the second one the ID 2, and so on. These IDs are unique, so you can use them later one.
 
-To get more information about levels, read [**Working with levels**](Working-with-levels)
+To get more information about levels, read [**Working with levels**](Working-with-levels).
 
 
-
-## What are blocks ##
+## What are blocks
 
 Blocks are used to get information, about when a client should get your feature.
-It have to be a .txt file, named like the basename of your feature and you need to put it in `cfg/stamm/levels`.
+It have to be a .txt file, named like the base-name of your feature and you need to put it in `cfg/stamm/levels`.
 
 You can set up to 100 blocks in the file.
 
@@ -142,7 +139,10 @@ For the block `name1` and the level settings from the first Page, `STAMM_GetBloc
 
 The last thing about blocks are the block descriptions.
 
-Every block can have up to 100 descriptions. These descriptions are readable in the stamm menu by the client.
+Every block can have up to 100 descriptions. These descriptions are readable in the Stamm menu by the client.
 You can add descriptions with the native `STAMM_AddBlockDescription(block=1, const String:description[], any:...)`.
 
 For the block `name1` and the level settings from the first Page, `STAMM_AddBlockDescription(1, "VIP's get a lot of stuff hehe")` would show the client, that he get a lot of stuff, when he becomes Silver VIP. This is because `name1` has the level Silver.
+
+---------
+### [Go to the next Page](Working-with-Stamm)
