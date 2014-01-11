@@ -75,7 +75,7 @@ This is the default file:
 
 It simply says, that you become `Bronze VIP with 500 points`, `Silver VIP with 1000 points`, and so on.
 
-The last level (default disabled) is a private one, it uses instead of points a flag string.
+The last level (default disabled) is a private one, it uses a flag string instead of points.
 
 So by default there are 6 levels. The first level always get the ID 1, the second one the ID 2, and so on. These IDs are unique, so you can use them later one.
 
@@ -102,6 +102,7 @@ The name have to be defined by yourself, it have to be unique and can be retriev
 The level have to be set by the server admin, it links the block with a specific level.
 
 The block ID is the position number of a block in the block file, beginning from 1.
+
 Example:
 
 	"name1"      "Silver"      // This will be ID 1
@@ -132,7 +133,7 @@ Here we only have one block, the name `level` is just a place holder, we will ju
 
 Here we have two blocks, one for the welcome message and one for the leave message.
 
-If you have specific block name, you can use `STAMM_GetBlockOfName(const String:name[])` to retrieve the ID of the block. E.g. `STAMM_GetBlockOfName("leave")` would be return 2
+If you have specific block name, you can use `STAMM_GetBlockOfName(const String:name[])` to retrieve the ID of the block. E.g. `STAMM_GetBlockOfName("leave")` would be return 2.
 
 If you have the ID of a block and you want the name, you can use `STAMM_GetBlockName(block=1, String:name[], maxlength)`, where block is the ID of the block.
 
