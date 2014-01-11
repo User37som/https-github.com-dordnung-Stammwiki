@@ -6,7 +6,7 @@
 	- [What are levels](Introduction-into-the-API#what-are-levels)
 	- [What are blocks](Introduction-into-the-API#what-are-blocks)
 
-- [**Working with stamm**](Working-with-stamm#)
+- [**Working with stamm**](Working-with-stamm)
 	- [How to get stamm information](Working-with-stamm#how-to-get-stamm-information)
 	- [How to control happy hour](Working-with-stamm#how-to-control-happy-hour)
 	- [Loading/Unloading features](Working-with-stamm#loading/unloading-features)
