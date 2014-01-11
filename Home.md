@@ -1,18 +1,17 @@
 Attention, the whole wiki is for the comming version 2.2 (Currently Alpha)
 
-## For Developers ##
+## For Developers
 
 - [**Introduction into the API**](wiki/Introduction-into-the-API)
-	- [General Introduction](wiki/Introduction-into-the-API#general-introduction)
 	- [Where to start](wiki/Introduction-into-the-API#where-to-start)
 	- [What are levels](wiki/Introduction-into-the-API#what-are-levels)
 
-- [**Working with stamm**](wiki/Working-with-stamm)
-	- [How to get stamm information](wiki/Working-with-stamm#how-to-get-stamm-information)
-	- [How to control happy hour](wiki/Working-with-stamm#how-to-control-happy-hour)
-	- [Loading/Unloading features](wiki/Working-with-stamm#loading/unloading-features)
-	- [Adding commands](wiki/Working-with-stamm#adding-commands)
-	- [How to write to logs](wiki/Working-with-stamm#how-to-write-to-logs)
+- [**Working with Stamm**](wiki/Working-with-Stamm)
+	- [How to get Stamm information](wiki/Working-with-Stamm#how-to-get-stamm-information)
+	- [How to control happy hour](wiki/Working-with-Stamm#how-to-control-happy-hour)
+	- [Loading/Unloading features](wiki/Working-with-Stamm#loading/unloading-features)
+	- [Adding commands](wiki/Working-with-Stamm#adding-commands)
+	- [How to write to logs](wiki/Working-with-Stamm#how-to-write-to-logs)
 
 - [**Working with clients**](wiki/Working-with-clients)
 	- [How to verify clients](wiki/Working-with-clients#how-to-verify-clients)
