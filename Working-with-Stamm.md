@@ -23,5 +23,16 @@ There are few natives and forwards to retrieve information about Stamm stuff
 - Native `STAMM_GetType()`    
 		This native returns how a client can collect points.    
 		The return is a value of the StammType enum.    
+		So: `KILLS`, `ROUNDS`, `TIME`, `KILLS_ROUNDS`, `KILLS_TIME`, `ROUNDS_TIME`, `KILLS_ROUNDS_TIME`
 
-- Native `STAMM_GetType()`  
+- Native `STAMM_GetGame()`  
+		This native returns the game Stamm is running on.    
+		The return is a value if the StammGame enum.
+		So: `GameOTHER`, `GameCSS`, `GameCSGO`, `GameTF2`, `GameDOD`
+
+- Native `STAMM_AutoUpdate()`  
+		This native returns whether the server admin wants auto updates on Stamm and his features.    
+		You can use this to auto update your feature.
+
+- Native `STAMM_GetTag(String:tag[], maxlength)`  
+		This native returns the Tag the server admin wants for chat messages.
