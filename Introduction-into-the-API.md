@@ -1,7 +1,10 @@
 ## General Introduction ##
 
-Hey, welcome to the Stamm Developer Wiki. Great to see that you wanna use the API. 
-Let me tell you, it's easier to use the API as you thought. Just read the next Pages and learn how to work with it.
+Hey, welcome to the Stamm Developer Wiki. Great to see that you wanna use the API.
+ 
+Let me tell you, it's easier to use the API as you thought.
+
+Just read the next pages and learn how to work with it.
 
 ## Where to start ##
 The API is divided in six parts. 
@@ -13,7 +16,66 @@ The API is divided in six parts.
 - [**The feature part**](Scripting-Features)
 - [**The block part**](Scripting-Features)
 
-You can use the core, client, color and level part without making a feature, for the feature and block part you need to add a feature. 
+You can use the core, client, color and level part without making a feature,
+for the feature and block part you need to add a feature. 
 
 ## What are levels ##
+
+Stamm supports currently up to 100 levels.
+
+There are two kind of levels: Public and private ones. 
+
+Public levels are achievable by every client with points, private levels are only for clients with specific admin flags.
+
+Levels are configurated by the server admin in `cfg/stamm/StammLevels.txt`.
+
+This is the default file:
+
+	"StammLevels"
+	{
+		"bronze"
+		{
+			"name"      "Bronze"
+			"points"    "500"
+		}
+		"silver"
+		{
+			"name"      "Silver"
+			"points"    "1000"
+		}
+		"gold"
+		{
+			"name"      "Gold"
+			"points"    "1500"
+		}
+		"platinum"
+		{
+			"name"      "Platinum"
+			"points"    "2000"
+		}
+		"diamond"
+		{
+			"name"      "Diamond"
+			"points"    "2500"
+		}
+		"god"
+		{
+			"name"      "God"
+			"points"    "3000"
+		}
+		//"special"
+		//{
+		//  "name"      "Special"
+		//  "flag"      "abt"
+		//}
+	}
+
+It simply says, that you become `Bronze VIP with 500 points`, `Silver VIP with 1000 points`, and so on.
+
+The last level (default disabled) is a private one, it uses instead of points a flag sring.
+
+So by default there are 6 levels. The first level always get the ID 1, the second one the ID 2, and so on. These IDs are unique, so you can use them later one.
+
+To get more information about levels, read [**Working with levels**](Working-with-levels)
+
 ## What are blocks ##
