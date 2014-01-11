@@ -1,4 +1,4 @@
-Attention, the hole wiki is for the comming version 2.2 (Currently Alpha)
+Attention, the whole wiki is for the comming version 2.2 (Currently Alpha)
 
 ## For Developers ##
 
