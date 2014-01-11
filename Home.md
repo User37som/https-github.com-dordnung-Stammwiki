@@ -1,3 +1,5 @@
+Attention, the hole wiki is for the comming version 2.2 (Currently Alpha)
+
 ## For Developers ##
 
 - [**Introduction into the API**](wiki/Introduction-into-the-API)
