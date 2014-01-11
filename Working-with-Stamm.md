@@ -80,3 +80,6 @@ Stamm has an own log system with two files. One file for common logs and one for
 You can write to the Stamm logs by using the native `STAMM_WriteToLog(bool:debug, const String:fmt[], any:...)`.
 
 The Parameter `debug` defines, whether to write to the debug file or not.
+
+---------
+### [Go to the next Page](Working-with-clients)
