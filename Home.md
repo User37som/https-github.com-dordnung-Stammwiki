@@ -1,4 +1,4 @@
-Attention, the whole wiki is for the comming version 2.2 (Currently Alpha)
+Attention, the whole wiki is for the coming version 2.2 (Currently Alpha)
 
 ## For Developers
 
@@ -14,11 +14,11 @@ Attention, the whole wiki is for the comming version 2.2 (Currently Alpha)
 	- [How to write to logs](wiki/Working-with-Stamm#how-to-write-to-logs)
 
 - [**Working with clients**](wiki/Working-with-clients)
-	- [How to verify clients](wiki/Working-with-clients#how-to-verify-clients)
+	- [How to get client information](wiki/Working-with-clients#how-to-get-client-information)
 	- [How to control points of clients](wiki/Working-with-clients#how-to-control-points-of-clients)
-	- [General client stuff](wiki/Working-with-clients#general-client-stuff])
 
 - [**Working with levels**](wiki/Working-with-levels)
+	- [Level natives](wiki/Introduction-into-the-API#level-natives)
 
 - [**Colors in Stamm**](wiki/Colors-in-Stamm)
 	- [Morecolors or not](wiki/Colors-in-Stamm#Morecolors-or-not)
