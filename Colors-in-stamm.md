@@ -7,6 +7,7 @@ Because of that, there is a little part in the API to work with that.
 ## Morecolors or not
 
 If you wanna know if you can use morecolors, then you can use the stock `STAMM_IsMoreColorsAvailable()`.
+
 This stock simply returns, whether the game is CS:GO or not.
 
 
