@@ -17,7 +17,7 @@ There are few natives and forwards to retrieve information about Stamm stuff.
 
 - Native `STAMM_IsLoaded()`    
 	This native return true when Stamm is fully loaded.    
-	Use this if you are unsure, whether you can use stamm stuff or not.
+	Use this if you are unsure whether you can use stamm stuff or not.
 
 #### Get important config values:
 
@@ -48,7 +48,7 @@ Happy hour give all clients on the server more points for a specific time.
 There are two forwards to get inform about when happy hour starts or ends.
 
 
-The forward `STAMM_OnHappyHourStart(time, factor)` will be fired when happy hour starts.
+The forward `STAMM_OnHappyHourStart(time, factor)` will be fired when happy hour starts.    
 The parameter `time` is the runtime of the happy hour in seconds, the parameter `factor` is the multiplication factor for the Stamm points.
 
 The forward `STAMM_OnHappyHourEnd()` will be fired when happy hour ends.
@@ -56,7 +56,7 @@ The forward `STAMM_OnHappyHourEnd()` will be fired when happy hour ends.
 
 And two natives, to start or end the happy hour.
 
-The native `STAMM_StartHappyHour(time, factor)` will activate happy hour.
+The native `STAMM_StartHappyHour(time, factor)` will activate happy hour.   
 The parameter `time` is the runtime of the happy hour in seconds, the parameter `factor` is the multiplication factor for the Stamm points.
 
 The native `STAMM_EndHappyHour()` will end happy hour.
@@ -85,7 +85,7 @@ Stamm has an own log system with two files. One file for common logs and one for
 
 You can write to the Stamm logs by using the native `STAMM_WriteToLog(bool:debug, const String:fmt[], any:...)`.
 
-The Parameter `debug` defines, whether to write to the debug file or not.
+The Parameter `debug` defines whether to write to the debug file or not.
 
 ---------
 ### [Go to the next Page](Working-with-clients)
