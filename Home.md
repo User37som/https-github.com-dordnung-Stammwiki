@@ -9,7 +9,7 @@ Attention, the whole wiki is for the coming version 2.2 (Currently Alpha)
 - [**Working with Stamm**](wiki/Working-with-Stamm)
 	- [How to get Stamm information](wiki/Working-with-Stamm#how-to-get-stamm-information)
 	- [How to control happy hour](wiki/Working-with-Stamm#how-to-control-happy-hour)
-	- [Loading/Unloading features](wiki/Working-with-Stamm#loading/unloading-features)
+	- [Loading/Unloading features](wiki/Working-with-Stamm#loadingunloading-features)
 	- [Adding commands](wiki/Working-with-Stamm#adding-commands)
 	- [How to write to logs](wiki/Working-with-Stamm#how-to-write-to-logs)
 
