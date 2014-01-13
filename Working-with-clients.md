@@ -7,8 +7,7 @@ There are a few natives and forwards to retrieve information about clients.
 
 #### Information to know whether a client is valid or not:
 
-- Forward `STAMM_OnClientReady(client)`
-
+- Forward `STAMM_OnClientReady(client)`    
 	This forward will be executed, after a client joined and is fully initialized by Stamm.
 
 	Here you can be sure to use all client natives.
@@ -27,18 +26,15 @@ There are a few natives and forwards to retrieve information about clients.
 	Parameter oldlevel is the old level of the client and newlevel the new level.
 	The new level can also be less than the oldlevel.
 
-- Forward `STAMM_OnSaveClient(client)`
-
+- Forward `STAMM_OnSaveClient(client)`    
 	This forward will be executed, after a client was saved to the database.
 
-- Native `STAMM_GetClientLevel(client)`
-
+- Native `STAMM_GetClientLevel(client)`    
 	This native return the level of the client.
 
 	For more information about levels read: [What are levels](wiki/Introduction-into-the-API#what-are-levels)
 
-- Native `STAMM_IsClientAdmin(client)`
-
+- Native `STAMM_IsClientAdmin(client)`    
 	This native return whether the client is a admin in Stamm or not.
 
 
