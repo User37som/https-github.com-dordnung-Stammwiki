@@ -1,6 +1,6 @@
 This part of the wiki shows you how to use the colors part of the API.
 
-We can not use, because of the support on CS:GO, morecolors in general.
+We can not use, because of the support on CS:GO, morecolors in general.   
 Because of that, there is a little part in the API to work with that.
 
 
