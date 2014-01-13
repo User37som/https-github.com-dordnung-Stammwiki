@@ -1,6 +1,6 @@
 Hey, welcome to the Stamm Developer Wiki. Great to see that you wanna use the API.
  
-Let me tell you, it's easier to use the API as you thought.
+Let me tell you: It's easier to use the API as you thought.
 
 Just read the next pages and learn how to work with it.
 
@@ -71,9 +71,9 @@ This is the default file:
 		//}
 	}
 
-It simply says, that you become `Bronze VIP with 500 points`, `Silver VIP with 1000 points`, and so on.
+It simply says, that you become Bronze VIP with `500 points`, Silver VIP with `1000 points`, and so on.
 
-The last level (default disabled) is a private one, it uses a flag string instead of points.
+Here is the last level (default disabled) a private one, it uses a flag string instead of points.
 
 So by default there are 6 levels. The first level always get the ID 1, the second one the ID 2, and so on. These IDs are unique, so you can use them later one.
 
@@ -104,7 +104,7 @@ Example:
 
 	"name1"      "Silver"      // This will be ID 1
 	"name234"    "Gold"        // This will be ID 2
-	"name9"      "Platinum"    // This will be ID 3
+	"name9"      "God"         // This will be ID 3
 
 If you only have one block, you can just work with the ID 1.
 
@@ -137,12 +137,19 @@ If you have the ID of a block and you want the name, you can use `STAMM_GetBlock
 You can retrieve the level ID of a specific block with the native `STAMM_GetBlockLevel(block=1)`.
 For the block `name1` and the level settings from the first Page, `STAMM_GetBlockLevel(1)` would return 2, because Silver is the second level.
 
-The last thing about blocks are the block descriptions.
+On top of this there are block descriptions, to let clients know about what happen with what block.
 
 Every block can have up to 100 descriptions. These descriptions are readable in the Stamm menu by the client.
 You can add descriptions with the native `STAMM_AddBlockDescription(block=1, const String:description[], any:...)`.
 
 For the block `name1` and the level settings from the first Page, `STAMM_AddBlockDescription(1, "VIP's get a lot of stuff hehe")` would show the client, that he get a lot of stuff, when he becomes Silver VIP. This is because `name1` has the level Silver.
+
+And the last thing about blocks is how to get the block a client is in.
+
+For this there is the native `STAMM_GetClientBlock(client)`. It will return the highest block a client is in.
+So in the example, if the client is a Platinum VIP, `STAMM_GetClientBlock(client)` will return 2, because the third block is only for God VIP's, but the second block is for Gold VIP's, and Platinum is higher (or equal) then Gold, so block 2 is the highest block.
+
+You need this especially for [Features with dynamic blocks](wiki/Scripting-Features#features-with-dynamic-blocks).
 
 ---------
 ### [Go to the next Page](Working-with-Stamm)
