@@ -18,7 +18,7 @@ Attention, the whole wiki is for the coming version 2.2 (Currently Alpha)
 	- [How to control points of clients](wiki/Working-with-clients#how-to-control-points-of-clients)
 
 - [**Working with levels**](wiki/Working-with-levels)
-	- [Level natives](wiki/Introduction-into-the-API#level-natives)
+	- [Level natives](wiki/Working-with-levels#level-natives)
 
 - [**Colors in Stamm**](wiki/Colors-in-Stamm)
 	- [Morecolors or not](wiki/Colors-in-Stamm#Morecolors-or-not)
