@@ -21,8 +21,7 @@ There are a few natives and forwards to retrieve information about clients.
 
 #### Other forwards and natives for clients:
 
-- Forward `STAMM_OnClientBecomeVip(client, oldlevel, newlevel)`
-
+- Forward `STAMM_OnClientBecomeVip(client, oldlevel, newlevel)`    
 	This forward will be executed, after a client reaches a new level.
 	
 	Parameter oldlevel is the old level of the client and newlevel the new level.
