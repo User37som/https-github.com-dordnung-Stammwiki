@@ -11,7 +11,7 @@ There are few natives and forwards to retrieve information about clients.
 	This forward will be executed, after a client joined and is fully initialized by Stamm.
 
 	Here you can be sure to use all client natives.
-	Use this instead of forwards like OnClientConnected
+	Use this instead of forwards like OnClientConnected.
 
 - Native `STAMM_IsClientValid(client)`
 	This native return true when a client is fully loaded by Stamm.
@@ -51,10 +51,14 @@ Then you can use a few natives to change these points.
 
 
 If you wanna know when the client get new points, then you can take the forward `STAMM_OnClientGetPoints(client, points)`.
-This will execute when the client get new points. Parameter `points` is not the new points number of the client, it is the number of points he got.
+
+This will execute when the client get new points.
+Parameter `points` is not the new points number of the client, it is the number of points he got.
 
 You can also prevent the client of getting points, or change the number of points he get.
+
 For this there is the forward `STAMM_OnClientGetPoints_PRE(client, &points)`.
+
 You can change the parameter `points`, to change the number of points he get, or return `Plugin_Handled`, to prevent the client of getting points.
 
 ---------
