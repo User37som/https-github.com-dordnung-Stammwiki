@@ -13,8 +13,7 @@ There are a few natives and forwards to retrieve information about clients.
 	Here you can be sure to use all client natives.
 	Use this instead of forwards like OnClientConnected.
 
-- Native `STAMM_IsClientValid(client)`
-
+- Native `STAMM_IsClientValid(client)`    
 	This native return true when a client is fully loaded by Stamm.
 	Use this if you are unsure whether you can use client natives or not.
 
