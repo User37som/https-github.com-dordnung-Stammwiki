@@ -15,7 +15,7 @@ Attention, the whole wiki is for the **coming version 2.2 (Currently Alpha)**
     - [Setup block file](wiki/How-to-install-a-Feature#set-up-block-file)
 	- [Set config and upload](wiki/How-to-install-a-Feature#set-config-and-upload)
 	
-- [**Feature List**](wiki/Feature-List)
+- [**Current Feature List**](wiki/Current-Feature-List)
 
 
 ## For Developers
