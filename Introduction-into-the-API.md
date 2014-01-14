@@ -26,7 +26,7 @@ Stamm supports currently **up to 100 levels**.
 
 There are two kind of levels: **Public and private ones**. 
 
-Public levels are **achievable with points** by every client, private levels are only for clients with **specific admin flags**.
+Public levels are **achievable by every client with points**, private levels are only for clients with **specific admin flags**.
 
 Levels are **configured by the server admin** in `cfg/stamm/StammLevels.txt`.
 
