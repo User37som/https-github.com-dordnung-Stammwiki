@@ -70,7 +70,7 @@ And the last thing about blocks is how to get the block a client is in.
 For this there is the native `STAMM_GetClientBlock(client)`. It will return the highest block a client is in.    
 So in the example, if the client is a Platinum VIP, `STAMM_GetClientBlock(client)` will return 2, because the third block is only for God VIP's, but the second block is for Gold VIP's, and Platinum is higher (or equal) then Gold, so block 2 is the highest block.
 
-You need this especially for [**Features with dynamic blocks**](#features-with-dynamic-blocks).
+You need this especially for [**Features with dynamic blocks**](Scripting-Features#features-with-dynamic-blocks).
 
 
 ## How features work
@@ -373,3 +373,6 @@ At the end i will show you the last remaining forwards and natives.
 
 - Native `STAMM_GetBasename(String:basename[], maxlength)`    
 	This native will give you the basename of your feature.
+
+
+**That's it, we're finished :)**
