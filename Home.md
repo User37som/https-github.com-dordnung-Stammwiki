@@ -4,7 +4,7 @@ Attention, the whole wiki is for the **coming version 2.2 (Currently Alpha)**
 ## For Server Admins
 
 - [**Install Stamm on your server**](wiki/install-stamm)
-    - [Setup levels](wiki/install-stamm#set-up-levels)
+    - [Setup levels](wiki/install-stamm#setup-levels)
     - [Configure the database](wiki/install-stamm#configure-the-database)
     - [Set config and upload](wiki/install-stamm#set-config-and-upload)
 	
