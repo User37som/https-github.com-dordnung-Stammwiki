@@ -1,4 +1,4 @@
-Attention, the whole wiki is for the coming version 2.2 (Currently Alpha)
+Attention, the whole wiki is for the **coming version 2.2 (Currently Alpha)**
 
 ## For Developers
 
@@ -27,7 +27,6 @@ Attention, the whole wiki is for the coming version 2.2 (Currently Alpha)
 - [**Scripting Features**](wiki/Scripting-Features)
 	- [What are blocks](wiki/Scripting-Features#what-are-blocks)
 	- [How features work](wiki/Scripting-Features#how-features-work)
-	- [How to add a feature](wiki/Scripting-Features#how-to-add-a-feature)
-	- [How to check access of clients](wiki/Scripting-Features#how-to-check-access-of-clients)
+	- [How to create a feature](wiki/Scripting-Features#how-to-create-a-feature)
 	- [Features with dynamic blocks](wiki/Scripting-Features#features-with-dynamic-blocks)
 	- [Other Stuff](wiki/Scripting-Features#other-stuff)
