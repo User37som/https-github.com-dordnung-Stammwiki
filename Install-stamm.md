@@ -305,4 +305,4 @@ To fix a bug i need the `sourcemod/logs` folder!
 
 
 ---------
-### [Go to the next Page](console-commands)
+### [Go to the next Page](Console-Commands)
