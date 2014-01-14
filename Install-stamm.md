@@ -9,23 +9,23 @@ Stamm supports currently **up to 100 levels**.
 
 There are two kind of levels: **Public and private ones**. 
 
-Public levels are **achievable with points** by every client, private levels are only for clients with **specific admin flags**.
+Public levels are **achievable by every client with points**, private levels are only for clients with **specific admin flags**.
 
 A public level has the following structure:
 
-	// You need this name for the level settings of the features, it must be unique
+	// You need this name for the feature level settings, it must be unique
 	"<name>"
 	{
 		// This is the name of your level. The Players see this name!
 		"name"		"<levelname>"
 
-		// This defines, how much points a player need for this level
+		// This defines, how much points a player need to get this level
 		"points"	"<points>"
 	}
 
 And private level has the following structure:
 
-	// You need this name for the level settings of the features, it must be unique
+	// You need this name for the feature level settings, it must be unique
 	"<name>"
 	{
 		// This is the name of your level. The Players see this name!
@@ -102,12 +102,14 @@ So if you only want two levels, named **Urban and City** at 1000 and 2000 points
 		}
 	}
 
+And so on.
+
 ## Configure the database
 
 You can use **SQLite or MySQL** to save the database stuff.     
 If you use SQLite, than you don't have to do anything on the database file.
 
-If you use mysql than create a `stamm_sql` entry in the `addons/sourcemod/config/database.cfg` file:
+If you use MySQL than create a `stamm_sql` entry in the `addons/sourcemod/config/database.cfg` file:
 
 	"stamm_sql"
 	{
@@ -118,7 +120,7 @@ If you use mysql than create a `stamm_sql` entry in the `addons/sourcemod/config
 		"pass"				"YOUR MYSQL PASSWORD"
 	}
 
-Just edit the **host, database, user and pass** with your data.    
+Just edit the **host, database, user and pass** fields with your data.    
 Notice: The MySQL database **must be an external database!**
 
 
@@ -293,3 +295,14 @@ As the last step open `cfg/stamm/stamm_config.cfg` and edit the settings as you 
 
 Finally upload all files and restart your server.    
 Now you are finished with the core Stamm plugin.
+
+
+## Report Bugs
+
+If you have a bug than you can report it either on the sourcemod forum or here in Github.
+
+To fix a bug i need the `sourcemod/logs` folder!
+
+
+---------
+### [Go to the next Page](console-commands)
