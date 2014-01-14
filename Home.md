@@ -10,7 +10,7 @@ Attention, the whole wiki is for the **coming version 2.2 (Currently Alpha)**
     - [Set config and upload](wiki/install-stamm#set-config-and-upload)
 	
 - [**Console Commands**](wiki/console-commands)
-- [**Stamm Webinterface**](https://github.com/popoklopsi/Stamm-Webinterface)
+- [**Stamm Webinterface**](https://github.com/popoklopsi/Stamm-Webinterface#stamm-webinterface)
 - [**How to install a Feature**](wiki/how-to-install-a-feature)
     - [Setup block file](wiki/how-to-install-a-feature#set-up-block-file)
 	- [Set config and upload](wiki/how-to-install-a-feature#set-config-and-upload)
