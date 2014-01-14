@@ -71,3 +71,305 @@ For this there is the native `STAMM_GetClientBlock(client)`. It will return the 
 So in the example, if the client is a Platinum VIP, `STAMM_GetClientBlock(client)` will return 2, because the third block is only for God VIP's, but the second block is for Gold VIP's, and Platinum is higher (or equal) then Gold, so block 2 is the highest block.
 
 You need this especially for [**Features with dynamic blocks**](#features-with-dynamic-blocks).
+
+
+## How features work
+
+After you add a feature it will be listed in the Stamm plugin.
+
+Stamm will search for the blocks file and will parse all blocks.
+
+Also the database get a new column in the database to remember whether the client activate the feature or not.
+
+Finally the `STAMM_OnFeatureLoaded` forward will be called. 
+
+
+## How to create a feature
+
+
+#### Create the blocks file:
+
+First of all create a block file with the basename of your feature.    
+If your features name for e.g. is `sample_feature.smx` create a file `sample_feature.txt` in the folder `cfg/stamm/levels`.
+
+Paste in:
+
+	"LevelSettings"
+	{
+
+	}
+
+Now you can define your blocks between the brackets.
+
+In this example we want to define two blocks, one for a connect message and one for a player death message.    
+So we add them between the brackets:
+
+	"LevelSettings"
+	{
+		"connect-message"    "Bronze"
+		"death-message"      "Gold"
+	}
+
+As a default we define here level Bronze for the connect message and level Gold for the death message.    
+Later one the server admin can change this to its own config.
+
+
+#### Create the phrase file:
+
+To sort the phrases, Stamm has its own sub-folder in the translations folder.    
+If you create a feature, please you the `translations/stamm` folder, then you also can use the stock `STAMM_LoadTranslation()`.
+
+Also name the phrase like the blocks file, so create again a `sample_feature.txt` and move it to `translations/stamm`.
+
+Here we need some information to notice the client about the feature, of which more later.
+
+So we paste in:
+
+	"Phrases"
+	{
+		"GetConnectMessage"
+		{
+			"en"		"When you connect, all players will notice"
+			"de"		"Wenn du joinst, wird das jeder sehen"
+		}
+	
+		"GetDeathMessage"
+		{
+			"en"		"When you die all, players will notice"
+			"de"		"Wenn du stirbst, wird das jeder sehen"
+		}
+	}
+
+
+#### Finally write the .sp file:
+
+Now we create a new .sp file (remember that it have to be the same name like the name of the block and translations file).    
+
+Then we include `sourcemod` and `stamm`:
+
+	#include <sourcemod>
+	#include <stamm>
+
+When all plugins are loaded we can add the feature.    
+But first of all we check whether Stamm is loaded or not, therefore we use the native `STAMM_IsAvailable()`:
+
+	public OnAllPluginsLoaded()
+	{
+		if (!STAMM_IsAvailable()) 
+		{
+			SetFailState("Can't Load Feature, Stamm is not installed!");
+		}
+	}
+
+After that we can load our translations and add the feature.    
+To load the translation we use `STAMM_LoadTranslation()` and to add a feature `STAMM_AddFeature(const String:name[], const String:description[]="", bool:allowChange=true, bool:standard=true)`:
+
+	public OnAllPluginsLoaded()
+	{
+		if (!STAMM_IsAvailable()) 
+		{
+			SetFailState("Can't Load Feature, Stamm is not installed!");
+		}
+
+		STAMM_LoadTranslation();
+		STAMM_AddFeature("VIP Connect-/Death Messages");
+	}
+
+The parameter of `STAMM_AddFeature` is the name of the feature.    
+We could also define a default description, decide if the feature is default enabled and if the user can disable the feature.
+
+The next step is to listen to `STAMM_OnFeatureLoaded`:
+
+	public STAMM_OnFeatureLoaded(const String:basename[])
+	{
+	
+	}
+
+There we will read out the block ID's and check if they are valid:
+
+	public STAMM_OnFeatureLoaded(const String:basename[])
+	{
+		new iBlockConnect = STAMM_GetBlockOfName("connect-message");
+		new iBlockDeath = STAMM_GetBlockOfName("death-message");
+
+		if (iBlockConnect == -1 && iBlockDeath == -1)
+		{
+			SetFailState("Feature couldn't found any block!");
+		}
+	}
+
+After this we add the descriptions of the blocks.    
+We need this to let the clients know that they can achieve the feature.
+
+	public STAMM_OnFeatureLoaded(const String:basename[])
+	{
+		new iBlockConnect = STAMM_GetBlockOfName("connect-message");
+		new iBlockDeath = STAMM_GetBlockOfName("death-message");
+
+		if (iBlockConnect == -1 && iBlockDeath == -1)
+		{
+			SetFailState("Feature couldn't found any block!");
+		}
+
+		if (iBlockConnect != -1)
+		{
+			STAMM_AddBlockDescription(iBlockConnect, "%T", "GetConnectMessage", LANG_SERVER);
+		}
+
+		if (iBlockDeath != -1)
+		{
+			STAMM_AddBlockDescription(iBlockDeath, "%T", "GetDeathMessage", LANG_SERVER);
+		}
+	}
+
+With the block file above it will notice the client that he get a connect message on level bronze and the death message on level gold.
+
+For the connect message we use the forward `STAMM_OnClientReady`
+
+	public STAMM_OnClientReady(client)
+	{
+	
+	}
+
+Here we have to check whether the client can use the feature or not.    
+For this we can use the native `STAMM_HaveClientFeature(client, block=1)`, this native checks if the clients level is high enough and if the client wants the feature, so he don't disabled it.    
+To write to the players we use our stock `STAMM_PrintToChatAll`:
+
+	public STAMM_OnClientReady(client)
+	{
+		new iBlockConnect = STAMM_GetBlockOfName("connect-message");
+
+		if (STAMM_HaveClientFeature(client, iBlockConnect))
+		{
+			STAMM_PrintToChatAll("VIP-Player {green}%N joint the server! {red}Yeah!", client);
+		}
+	}
+
+The same we do for the death message (We need to hook the death event before).    
+
+	public OnPluginStart()
+	{
+		HookEvent("player_death", eventPlayerDeath);
+	}
+
+	public Action:eventPlayerDeath(Handle:event, const String:name[], bool:dontBroadcast)
+	{
+		new client = GetClientOfUserId(GetEventInt(event, "userid"));
+
+		if (STAMM_IsClientValid(client))
+		{
+			new iBlockDeath = STAMM_GetBlockOfName("death-message");
+	
+			if (STAMM_HaveClientFeature(client, iBlockDeath))
+			{
+				STAMM_PrintToChatAll("VIP-Player {green}%N died! {red}Oh no ):", client);
+			}
+		}
+	}
+
+That's it! Compile the plugin and move it to `plugins/stamm`.    
+Now upload all your files (plugin, translation, block file) and load the feature.
+
+
+## Features with dynamic blocks
+
+A cool feature are dynamic blocks, so the server admin can create unlimited blocks and each block is better than the block before.   
+Here we want to give VIP's more HP on spawn. Per block the player get 10 percent more!
+ 
+First of all we create a new blocks file:
+
+	"LevelSettings"
+	{
+		"1"    "Bronze"
+		"2"    "Silver"
+		"3"    "God"
+	}
+
+and a new phrase file:
+
+	"Phrases"
+	{
+		"GetMoreHpOnSpawn"
+		{
+			"#format"	"{1:i}"
+			"en"		"Get every round {1} Percent more HP"
+			"de"		"Bekomme jede Runde {1} Percent mehr HP"
+		}
+	}
+
+Then we create a new .sp file and hook the spawn event:
+
+	public OnPluginStart()
+	{
+		HookEvent("player_spawn", eventPlayerSpawn);
+	}
+
+also we add the feature:
+
+	public OnAllPluginsLoaded()
+	{
+		if (!STAMM_IsAvailable()) 
+		{
+			SetFailState("Can't Load Feature, Stamm is not installed!");
+		}
+
+		STAMM_LoadTranslation();
+		STAMM_AddFeature("VIP More HP On Spawn");
+	}
+
+To add the description we need to loop through all blocks and add therefore a description:
+
+	public STAMM_OnFeatureLoaded(const String:basename[])
+	{
+		for (new i=1; i <= STAMM_GetBlockCount(); i++)
+		{
+			STAMM_AddBlockDescription(i, "%T", "GetMoreHpOnSpawn", LANG_SERVER, * (i * 10));
+		}
+	}
+
+With this code we add a description for the first block with 10 percent and for (here the third) with 30 percent.    
+But the server admin can also add more blocks.
+
+Now if the client spawn we give him more HP.    
+To get the highest block the client is in, we use the `STAMM_GetClientBlock` native:
+
+	public PlayerSpawn(Handle:event, String:name[], bool:dontBroadcast)
+	{
+		new client = GetClientOfUserId(GetEventInt(event, "userid"));
+		
+		if (STAMM_IsClientValid(client))
+		{
+			if (IsPlayerAlive(client)) 
+			{
+				new clientBlock = STAMM_GetClientBlock(client);
+			
+				if (clientBlock > 0)
+				{
+					new newHP = GetClientHealth(client) + GetClientHealth(client) * (clientBlock / 10);
+
+					SetEntityHealth(client, newHP);
+				}
+			}
+		}
+	}
+
+If the client is in block 2 and has 100 HP, newHp is:    
+`100 + 100 * (2 / 10) = 100 + 100 * 0.2 = 100 + 20 = 120`
+
+
+## Other Stuff
+
+At the end i will show you the last remaining forwards and natives.
+
+- Forward `STAMM_OnClientChangedFeature(client, bool:turnedOn, bool:isShop)`   
+	This forward will be called, when a client turned your feature on or off.    
+	The last parameter `isShop` is currently disabled!
+
+- Native `STAMM_WantClientFeature(client)`    
+	This native return true when the client wants your feature, otherwise false.
+
+- Native `STAMM_IsMyFeature(const String:basename[])`    
+	This native you can use to check if a given basename is your feature or not.
+
+- Native `STAMM_GetBasename(String:basename[], maxlength)`    
+	This native will give you the basename of your feature.
