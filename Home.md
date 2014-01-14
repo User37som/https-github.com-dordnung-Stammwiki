@@ -3,18 +3,19 @@ Attention, the whole wiki is for the **coming version 2.2 (Currently Alpha)**
 
 ## For Server Admins
 
-- [**Install Stamm on your server**](wiki/install-stamm)
-    - [Setup levels](wiki/install-stamm#setup-levels)
-    - [Configure the database](wiki/install-stamm#configure-the-database)
-    - [Set config and upload](wiki/install-stamm#set-config-and-upload)
+- [**Install Stamm on your server**](wiki/Install-Stamm)
+    - [Setup levels](wiki/Install-Stamm#setup-levels)
+    - [Configure the database](wiki/Install-Stamm#configure-the-database)
+    - [Set config and upload](wiki/Install-Stamm#set-config-and-upload)
+    - [Report Bugs](wiki/Install-Stamm#report-bugs)
 	
-- [**Console Commands**](wiki/console-commands)
+- [**Console Commands**](wiki/Console-Commands)
 - [**Stamm Webinterface**](https://github.com/popoklopsi/Stamm-Webinterface#stamm-webinterface)
-- [**How to install a Feature**](wiki/how-to-install-a-feature)
-    - [Setup block file](wiki/how-to-install-a-feature#set-up-block-file)
-	- [Set config and upload](wiki/how-to-install-a-feature#set-config-and-upload)
+- [**How to install a Feature**](wiki/How-to-install-a-Feature)
+    - [Setup block file](wiki/How-to-install-a-Feature#set-up-block-file)
+	- [Set config and upload](wiki/How-to-install-a-Feature#set-config-and-upload)
 	
-- [**Feature List**](wiki/feature-list)
+- [**Feature List**](wiki/Feature-List)
 
 
 ## For Developers
