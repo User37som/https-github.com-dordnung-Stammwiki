@@ -4,15 +4,15 @@ Attention, the whole wiki is for the **coming version 2.2 (Currently Alpha)**
 ## For Server Admins
 
 - [**Install Stamm on your server**](wiki/install-stamm)
-	- [Setup levels](wiki/install-stamm#set-up-levels)
-	- [Configure the database](wiki/install-stamm#configure-the-database)
-	- [Choose the admins](wiki/install-stamm#choose-the-admins)
-	- [Set config and upload](wiki/install-stamm#set-config-and-upload)
+    - [Setup levels](wiki/install-stamm#set-up-levels)
+    - [Configure the database](wiki/install-stamm#configure-the-database)
+    - [Choose the admins](wiki/install-stamm#choose-the-admins)
+    - [Set config and upload](wiki/install-stamm#set-config-and-upload)
 	
 - [**Console Commands**](wiki/console-commands)
 - [**Stamm Webinterface**](https://github.com/popoklopsi/Stamm-Webinterface)
 - [**How to install a Feature**](wiki/how-to-install-a-feature)
-	- [Setup block file](wiki/how-to-install-a-feature#set-up-block-file)
+    - [Setup block file](wiki/how-to-install-a-feature#set-up-block-file)
 	- [Set config and upload](wiki/how-to-install-a-feature#set-config-and-upload)
 	
 - [**Feature List**](wiki/feature-list)
