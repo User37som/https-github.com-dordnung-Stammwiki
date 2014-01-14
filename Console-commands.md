@@ -1,4 +1,4 @@
-There are a few command to **use on the console:**
+There are a few commands to **use on the console:**
 
 ### Happy Hour Commands
 
@@ -9,7 +9,7 @@ There are a few command to **use on the console:**
 - `stamm_stop_happyhour`    
 	This **stops the happy hour.**
 
-### Points Commands
+### Point Commands
 
 - `stamm_set_points <userid|steamid> <points>`    
 	**Sets the Stamm points** of a player.    
@@ -40,5 +40,5 @@ There are a few command to **use on the console:**
 ### Database Commands
 
 - `stamm_convert_db <mysql>`    
-	If parameter `mysql` is 1 its convert the database **from mysql to sqlite.**    
-	If parameter `mysql` is 01 its convert the database from **sqlite to mysql**.    
+	If parameter `mysql` is 1 its converts the database **from mysql to sqlite.**    
+	If parameter `mysql` is 0 its converts the database from **sqlite to mysql**.    
