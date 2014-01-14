@@ -6,8 +6,7 @@ For a picture, click on the name!
 
 - Anti Flash - Don't flash VIP's, and the own team by a flashbang of a VIP    
 **Supported Games**: CS:S and CS:GO    
-Needs Extension [Flashbangtools](https://forums.alliedmods.net/showthread.php?p=1901622#post1901622)
-
+Needs Extension [Flashbangtools](https://forums.alliedmods.net/showthread.php?p=1901622#post1901622)    
 ![](http://popoklopsi.de/stamm/downloader/Pictures/2012100900036.jpg)
 
 - Chat Tags - Have a chat tag and a own vip chat    
