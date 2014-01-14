@@ -35,3 +35,7 @@ There you can add as much blocks as you want and each block is better than the b
 If the feature has a config, than configure it.    
 You may find it in `cfg/stamm/features`.
 Upload all files to your server and load the feature.
+
+
+---------
+### [Go to the next Page](Current-Feature-List)
