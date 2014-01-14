@@ -1,12 +1,12 @@
-This part of the wiki shows you how to make a feature for Stamm.
+This part of the wiki shows you **how to make a feature** for Stamm.
 
 
 ## What are blocks
 
 Blocks are used to get information, about when a client should get your feature.    
-It have to be a .txt file, named like the base-name of your feature and you need to put it in `cfg/stamm/levels`.
+It have to be a .txt file, named like **the basename of your feature** and you need to put it in `cfg/stamm/levels`.
 
-You can set up to 100 blocks in the file.
+You can set **up to 100 blocks** in the file.
 
 A block file looks like this:
 
@@ -16,10 +16,10 @@ A block file looks like this:
 		"<name_of_the_block2>"   "<level_of_the_block2>"
 	}
 
-The name have to be defined by yourself, it have to be unique and can be retrieved with the API.    
+The name have to be defined by yourself, it have to be **unique** and can be retrieved with the API.    
 The level have to be set by the server admin, it links the block with a specific level.
 
-The block ID is the position number of a block in the block file, beginning from 1.
+The **block ID** is the **position number** of a block in the block file, **beginning from 1**.
 
 Example:
 
@@ -49,26 +49,26 @@ Here we only have one block, the name `level` is just a place holder, we will ju
 		"leave"         "Silver"
 	}
 
-Here we have two blocks, one for the welcome message and one for the leave message.
+Here we have **two blocks**, one for the **welcome message** and one for the **leave message**.
 
-If you have specific block name, you can use `STAMM_GetBlockOfName(const String:name[])` to retrieve the ID of the block. E.g. `STAMM_GetBlockOfName("leave")` would be return 2.
+If you have a **specific block name**, you can use `STAMM_GetBlockOfName(const String:name[])` to **retrieve the ID** of the block. E.g. `STAMM_GetBlockOfName("leave")` would be return 2.
 
 If you have the ID of a block and you want the name, you can use `STAMM_GetBlockName(block=1, String:name[], maxlength)`, where block is the ID of the block.
 
-You can retrieve the level ID of a specific block with the native `STAMM_GetBlockLevel(block=1)`.    
+You can retrieve the **level ID of a specific block** with the native `STAMM_GetBlockLevel(block=1)`.    
 For the block `name1` and the level settings from the first Page, `STAMM_GetBlockLevel(1)` would return 2, because Silver is the second level.
 
-On top of this there are block descriptions, to let clients know about what happen with what block.
+On top of this there are **block descriptions**, to let clients know about what happen with what block.
 
-Every block can have up to 100 descriptions. These descriptions are readable in the Stamm menu by the client.    
-You can add descriptions with the native `STAMM_AddBlockDescription(block=1, const String:description[], any:...)`.
+Every block can have **up to 100 descriptions**. These descriptions are readable in the Stamm menu by the client.    
+You can **add descriptions** with the native `STAMM_AddBlockDescription(block=1, const String:description[], any:...)`.
 
-For the block `name1` and the level settings from the first Page, `STAMM_AddBlockDescription(1, "VIP's get a lot of stuff hehe")` would show the client, that he get a lot of stuff, when he becomes Silver VIP. This is because `name1` has the level Silver.
+For the block `name1` and the level settings from the first Page, `STAMM_AddBlockDescription(1, "VIP's get a lot of stuff hehe")` would show the client, that **he get a lot of stuff**, when he becomes Silver VIP. This is because `name1` has the level Silver.
 
-And the last thing about blocks is how to get the block a client is in.
+And the last thing about blocks is **how to get the block a client is in**.
 
-For this there is the native `STAMM_GetClientBlock(client)`. It will return the highest block a client is in.    
-So in the example, if the client is a Platinum VIP, `STAMM_GetClientBlock(client)` will return 2, because the third block is only for God VIP's, but the second block is for Gold VIP's, and Platinum is higher (or equal) then Gold, so block 2 is the highest block.
+For this there is the native `STAMM_GetClientBlock(client)`. It will return the **highest block a client is in**.    
+So in the example, if the client is a Platinum VIP, `STAMM_GetClientBlock(client)` will return **2**, because the third block is only for God VIP's, but the second block is for Gold VIP's, and Platinum is higher (or equal) then Gold, so **block 2 is the highest block**.
 
 You need this especially for [**Features with dynamic blocks**](Scripting-Features#features-with-dynamic-blocks).
 
@@ -77,7 +77,7 @@ You need this especially for [**Features with dynamic blocks**](Scripting-Featur
 
 After you add a feature it will be listed in the Stamm plugin.
 
-Stamm will search for the blocks file and will parse all blocks.
+Stamm will **search for the blocks file** and will parse all blocks.
 
 Also the database get a new column in the database to remember whether the client activate the feature or not.
 
@@ -89,7 +89,7 @@ Finally the `STAMM_OnFeatureLoaded` forward will be called.
 
 #### Create the blocks file:
 
-First of all create a block file with the basename of your feature.    
+First of all **create a block file with the basename of your feature**.    
 If your features name for e.g. is `sample_feature.smx` create a file `sample_feature.txt` in the folder `cfg/stamm/levels`.
 
 Paste in:
@@ -117,9 +117,9 @@ Later one the server admin can change this to its own config.
 #### Create the phrase file:
 
 To sort the phrases, Stamm has its own sub-folder in the translations folder.    
-If you create a feature, please you the `translations/stamm` folder, then you also can use the stock `STAMM_LoadTranslation()`.
+If you create a feature, please use the `translations/stamm` folder, then you also can use the stock `STAMM_LoadTranslation()`.
 
-Also name the phrase like the blocks file, so create again a `sample_feature.txt` and move it to `translations/stamm`.
+Also **name the phrase file like the blocks file**, so create again a `sample_feature.txt` and move it to `translations/stamm`.
 
 Here we need some information to notice the client about the feature, of which more later.
 
@@ -143,15 +143,15 @@ So we paste in:
 
 #### Finally write the .sp file:
 
-Now we create a new .sp file (remember that it have to be the same name like the name of the block and translations file).    
+Now we create a new .sp file (**remember that it have to be the same name like the name of the block and translations file**).    
 
 Then we include `sourcemod` and `stamm`:
 
 	#include <sourcemod>
 	#include <stamm>
 
-When all plugins are loaded we can add the feature.    
-But first of all we check whether Stamm is loaded or not, therefore we use the native `STAMM_IsAvailable()`:
+**When all plugins are loaded we can add the feature**.    
+But first of all we **check whether Stamm is loaded or not**, therefore we use the native `STAMM_IsAvailable()`:
 
 	public OnAllPluginsLoaded()
 	{
@@ -161,7 +161,7 @@ But first of all we check whether Stamm is loaded or not, therefore we use the n
 		}
 	}
 
-After that we can load our translations and add the feature.    
+After that we can **load our translations and add the feature**.    
 To load the translation we use `STAMM_LoadTranslation()` and to add a feature `STAMM_AddFeature(const String:name[], const String:description[]="", bool:allowChange=true, bool:standard=true)`:
 
 	public OnAllPluginsLoaded()
@@ -176,7 +176,7 @@ To load the translation we use `STAMM_LoadTranslation()` and to add a feature `S
 	}
 
 The parameter of `STAMM_AddFeature` is the name of the feature.    
-We could also define a default description, decide if the feature is default enabled and if the user can disable the feature.
+We could also define a **default description**, decide if the **feature is default enabled or not** and if the **user can disable the feature**.
 
 The next step is to listen to `STAMM_OnFeatureLoaded`:
 
@@ -185,7 +185,7 @@ The next step is to listen to `STAMM_OnFeatureLoaded`:
 	
 	}
 
-There we will read out the block ID's and check if they are valid:
+There we will **read out the block ID's** and check if they are valid:
 
 	public STAMM_OnFeatureLoaded(const String:basename[])
 	{
@@ -198,7 +198,7 @@ There we will read out the block ID's and check if they are valid:
 		}
 	}
 
-After this we add the descriptions of the blocks.    
+After this we **add the descriptions of the blocks**.    
 We need this to let the clients know that they can achieve the feature.
 
 	public STAMM_OnFeatureLoaded(const String:basename[])
@@ -222,7 +222,7 @@ We need this to let the clients know that they can achieve the feature.
 		}
 	}
 
-With the block file above it will notice the client that he get a connect message on level bronze and the death message on level gold.
+With the block file above it will notice the client that he **get a connect message on level bronze** and the **death message on level gold**.
 
 For the connect message we use the forward `STAMM_OnClientReady`
 
@@ -232,7 +232,7 @@ For the connect message we use the forward `STAMM_OnClientReady`
 	}
 
 Here we have to check whether the client can use the feature or not.    
-For this we can use the native `STAMM_HaveClientFeature(client, block=1)`, this native checks if the clients level is high enough and if the client wants the feature, so he don't disabled it.    
+For this we can use the native `STAMM_HaveClientFeature(client, block=1)`, this native checks if the **clients level is high enough** and if the **client wants the feature, so he doesn't disabled it**.    
 To write to the players we use our stock `STAMM_PrintToChatAll`:
 
 	public STAMM_OnClientReady(client)
@@ -267,13 +267,13 @@ The same we do for the death message (We need to hook the death event before).
 		}
 	}
 
-That's it! Compile the plugin and move it to `plugins/stamm`.    
-Now upload all your files (plugin, translation, block file) and load the feature.
+That's it! **Compile the plugin** and move it to `plugins/stamm`.    
+Now **upload all your files** (plugin, translation, block file) and load the feature.
 
 
 ## Features with dynamic blocks
 
-A cool feature are dynamic blocks, so the server admin can create unlimited blocks and each block is better than the block before.   
+A cool feature are dynamic blocks, so the server admin can create **unlimited blocks** and **each block is better** than the block before.   
 Here we want to give VIP's more HP on spawn. Per block the player get 10 percent more!
  
 First of all we create a new blocks file:
@@ -317,7 +317,7 @@ also we add the feature:
 		STAMM_AddFeature("VIP More HP On Spawn");
 	}
 
-To add the description we need to loop through all blocks and add therefore a description:
+To add the description we need to **loop through all blocks and add therefore a description**:
 
 	public STAMM_OnFeatureLoaded(const String:basename[])
 	{
@@ -327,11 +327,19 @@ To add the description we need to loop through all blocks and add therefore a de
 		}
 	}
 
-With this code we add a description for the first block with 10 percent and for (here the third) with 30 percent.    
-But the server admin can also add more blocks.
+With this code we add a description for the **first block with 10 percent and for (here the second) with 20 percent**, and so on.    
+But the server admin can also add more blocks, for e.g:
+
+	"LevelSettings"
+	{
+		"1"    "Bronze"
+		"2"    "Silver"
+		"3"    "Platinum"
+		"4"    "God"
+	}
 
 Now if the client spawn we give him more HP.    
-To get the highest block the client is in, we use the `STAMM_GetClientBlock` native:
+To **get the highest block the client is in**, we use the `STAMM_GetClientBlock` native:
 
 	public PlayerSpawn(Handle:event, String:name[], bool:dontBroadcast)
 	{
@@ -359,19 +367,19 @@ If the client is in block 2 and has 100 HP, newHp is:
 
 ## Other Stuff
 
-At the end i will show you the last remaining forwards and natives.
+At the end i will show you the **last remaining forwards and natives**.
 
-- Forward `STAMM_OnClientChangedFeature(client, bool:turnedOn, bool:isShop)`   
+- **Forward** `STAMM_OnClientChangedFeature(client, bool:turnedOn, bool:isShop)`   
 	This forward will be called, when a client turned your feature on or off.    
 	The last parameter `isShop` is currently disabled!
 
-- Native `STAMM_WantClientFeature(client)`    
+- **Native** `STAMM_WantClientFeature(client)`    
 	This native return true when the client wants your feature, otherwise false.
 
-- Native `STAMM_IsMyFeature(const String:basename[])`    
+- **Native** `STAMM_IsMyFeature(const String:basename[])`    
 	This native you can use to check if a given basename is your feature or not.
 
-- Native `STAMM_GetBasename(String:basename[], maxlength)`    
+- **Native** `STAMM_GetBasename(String:basename[], maxlength)`    
 	This native will give you the basename of your feature.
 
 
