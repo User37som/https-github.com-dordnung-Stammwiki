@@ -1,4 +1,4 @@
-For a picture, click on the name!
+Here a complete list over all current features.
 
 
 - Admin Flags - Give admin flags    
