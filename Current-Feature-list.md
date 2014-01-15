@@ -2,7 +2,7 @@ For a picture, click on the name!
 
 
 - Admin Flags - Give admin flags    
-**Supported Games**: CS:S, CS:GO and TF2
+**Supported Games**: All Games    
 
 - Anti Flash - Don't flash VIP's, and the own team by a flashbang of a VIP    
 **Supported Games**: CS:S and CS:GO    
@@ -10,14 +10,14 @@ Needs Extension [Flashbangtools](https://forums.alliedmods.net/showthread.php?p=
 ![](http://popoklopsi.de/stamm/downloader/Pictures/2012100900036.jpg)
 
 - Chat Tags - Have a chat tag and a own vip chat    
-**Supported Games**: CS:S and CS:GO and TF2    
+**Supported Games**: All Games     
 ![](http://popoklopsi.de/stamm/downloader/Pictures/2012091900019.jpg)
 
 - Colored Smokes - Have colored smokes    
 **Supported Games**: CS:S    
 ![](http://popoklopsi.de/stamm/downloader/Pictures/2012100900057.jpg)
 
-- Grenade Trail - Have a player trail    
+- Grenade Trail - Have a grenade trail    
 **Supported Games**: CS:S and CS:GO    
 ![](http://popoklopsi.de/stamm/downloader/Pictures/2012091900009.jpg)
 
@@ -29,56 +29,56 @@ Needs Extension [Flashbangtools](https://forums.alliedmods.net/showthread.php?p=
 **Supported Games**: CS:S and CS:GO
 
 - Joinsound - Have a joinsound    
-**Supported Games**: CS:S, CS:GO and TF2
+**Supported Games**: All Games    
 
 - KillHP - Get HP when killing someone    
-**Supported Games**: CS:S and CS:GO and TF2
+**Supported Games**: All Games    
 
 - Knife Infect - Infect players with a knife    
 **Supported Games**: CS:S and CS:GO    
 ![](http://popoklopsi.de/stamm/downloader/Pictures/2012100900040.jpg)
 
 - Less Gravity - Get each level less gravity    
-**Supported Games**: CS:S, CS:GO and TF2    
+**Supported Games**: All Games    
 ![](http://popoklopsi.de/stamm/downloader/Pictures/2012091900018.jpg)
 
 - More Ammo - Have more ammo    
-**Supported Games**: CS:S    
+**Supported Games**: All Games    
 ![](http://popoklopsi.de/stamm/downloader/Pictures/2012091900020.jpg)
 
 - More Speed - Have more speed    
-**Supported Games**: CS:S, CS:GO and TF2
+**Supported Games**: All Games
 
 - No Fall Damage - Have no Fall Damage    
-**Supported Games**: CS:S    
+**Supported Games**: All Games    
 Thanks to: Franc1sco
 
 - No Reload - Don't have to reload    
-**Supported Games**: CS:S and CS:GO
+**Supported Games**: CS:S, CS:GO, TF2
 
 - No Restrict - Allow restricted weapons    
 **Supported Games**: CS:S and CS:GO    
 Needs Plugin [Weapon Restrict](http://forums.alliedmods.net/showthread.php?p=950174)
 
 - Player Trail - Have a player trail    
-**Supported Games**: CS:S    
+**Supported Games**: All Games    
 ![](http://popoklopsi.de/stamm/downloader/Pictures/2012091900015.jpg)
 
 - Regenerate HP - Regenerating your HP    
-**Supported Games**: CS:S, CS:GO and TF2
+**Supported Games**: All Games
 
 - Reserve Slot - Have a reserve slot    
-**Supported Games**: CS:S and CS:GO and TF2
+**Supported Games**: All Games
 
 - Show Damage - Show Damage done to a player    
-**Supported Games**: CS:S, CS:GO and TF2    
+**Supported Games**: All Games    
 ![](http://popoklopsi.de/stamm/downloader/Pictures/2012100900011.jpg)
 
 - Spawn HP - Have more HP on spawn    
-**Supported Games**: CS:S, CS:GO and TF2
+**Supported Games**: All Games
 
 - Teleport - Create teleport points and teleport to it    
-**Supported Games**: CS:S, CS:GO and TF2    
+**Supported Games**: All Games    
 ![](http://popoklopsi.de/stamm/downloader/Pictures/2012100900038.jpg)
 
 - Throwing Knifes - Throw knifes    
@@ -96,7 +96,7 @@ Needs Plugin [Throwing Knives](https://forums.alliedmods.net/showthread.php?t=12
 ![](http://popoklopsi.de/stamm/downloader/Pictures/2012091900023.jpg)
 
 - VIP Icon - Have an icon above your head    
-**Supported Games**: CS:S, CS:GO and TF2    
+**Supported Games**: All Games    
 ![](http://popoklopsi.de/stamm/downloader/Pictures/2012091900012.jpg)
 
 - VIP Tag - Have a VIP Tag    
@@ -108,4 +108,4 @@ Needs Plugin [Throwing Knives](https://forums.alliedmods.net/showthread.php?t=12
 ![](http://popoklopsi.de/stamm/downloader/Pictures/2012091900008.jpg)
 
 - Welcome and Leave Message - Have a welcome and leave message    
-**Supported Games**: CS:S, CS:GO and TF2
+**Supported Games**: All Games
