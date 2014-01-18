@@ -72,11 +72,11 @@ They will return **-1** when the feature is already loaded/unloaded, **0** when 
 
 To give the client a **overview over all commands**, Stamm has a menu with a list of all Stamm specific commands.
 
-You simply can **add a command** by using the native `STAMM_AddCommand(const String:command[], const String:name[], any:...)`.
+You simply can **add a command** in the forward `STAMM_OnClientRequestCommands(client)` by using the native `STAMM_AddCommand(const String:command[], const String:name[], any:...)`.
 
 Parameter `command` is the real command and `name` a description of the command.
 
-You can **add your command here** to let the clients know about your command.
+You can **add your command here** to let the client know about your command.
 
 
 ## How to write to logs
