@@ -1,4 +1,6 @@
-Attention, the whole wiki is for the **coming version 2.2 (Currently Alpha)**
+Attention, the whole wiki is for the **coming version 2.2 (Currently Alpha)**    
+
+Please report me if you find any mistakes and i will fix that.
 
 
 ## For Server Admins
