@@ -18,7 +18,7 @@ A public level has the following structure:
 	{
 		// This is the name of your level. The Players see this name!
 		"name"		"<levelname>"
-
+	
 		// This defines, how much points a player need to get this level
 		"points"	"<points>"
 	}
@@ -98,7 +98,7 @@ So if you only want two levels, named **Urban and City** at 1000 and 2000 points
 		"citylevel"
 		{
 			"name"      "City"
-			"points"    "20000"
+			"points"    "2000"
 		}
 	}
 
