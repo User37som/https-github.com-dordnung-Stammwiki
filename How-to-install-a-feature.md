@@ -24,7 +24,7 @@ Example:
 	{
 		"name1"      "Silver"      // This is for all silver VIP's
 		"name234"    "Gold"        // This is for all gold VIP's
-		"name9"      "God"         // This is for all VIP's higher than Gold
+		"name9"      "God"         // This is for all god VIP's
 	}
 
 There are also features with unlimited blocks.    
