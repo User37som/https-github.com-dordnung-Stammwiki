@@ -4,7 +4,7 @@ Now I'll show you how you can install a feature.
 ## Setup block file
 
 Blocks are used to get information about when a client should get a feature (**Not all features have block files!**).    
-You find the block file of a level in `cfg/stamm/levels`.    
+You find the block file of a feature in `cfg/stamm/levels`.    
 It has the **same name like the feature**.
 
 A block file looks like this:
@@ -15,10 +15,11 @@ A block file looks like this:
 		"<name_of_the_block2>"   "<level_of_the_block2>"
 	}
 
-What a block means you have to read in the feature description.    
-You only have to set the level of the blocks.
+You have to read in the feature description what a block do for this feature.    
+Usually you only have to set the level of the blocks.
 
 Example:
+
 	"LevelSettings"
 	{
 		"name1"      "Silver"      // This is for all silver VIP's
