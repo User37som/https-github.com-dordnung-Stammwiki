@@ -125,7 +125,7 @@ For supporting morecolors you can add `.morecolors` to the filename, like:     `
 In this file you can use colors of the morecolors include.    
 Stamm will automatically use this if morecolors is available.   
 
-Here we need some information to notice the client about the feature, of which more later.
+In the translation file we need some information to notice the client about the feature, of which more later.
 
 So we paste in:
 
