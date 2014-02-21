@@ -119,7 +119,10 @@ Later one the server admin can change this to its own config.
 To sort the phrases, Stamm has its own sub-folder in the translations folder.    
 If you create a feature, please use the `translations/stamm` folder, then you also can use the stock `STAMM_LoadTranslation()`.
 
-Also **name the phrase file like the blocks file**, so create again a `sample_feature.txt` and move it to `translations/stamm`.
+Also **name the phrase file like the blocks file**, so create again a `sample_feature.txt` and move it to `translations/stamm`.    
+For supporting morecolors you can add `.morecolors` to the filename, like: `sample_feature.morecolors.txt`. 
+In this file you can use colors of the morecolors include. 
+Stamm will automatically use this if morecolors is available.
 
 Here we need some information to notice the client about the feature, of which more later.
 
