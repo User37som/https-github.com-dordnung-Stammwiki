@@ -1,111 +1,220 @@
-Here a complete list over all current features.
+- **Admin Flags**: Give VIP's specific admin flags  
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
 
 
-- Admin Flags - Give admin flags    
-**Supported Games**: All Games    
+- **Anti Flash**: Give VIP's Anti Flash    
+	**Supported Games**: CS:S and CS:GO    
+	Needs Extension [Flashbang Tools](https://forums.alliedmods.net/showthread.php?p=1901622#post1901622)    
 
-- Anti Flash - Don't flash VIP's, and the own team by a flashbang of a VIP    
-**Supported Games**: CS:S and CS:GO    
-Needs Extension [Flashbangtools](https://forums.alliedmods.net/showthread.php?p=1901622#post1901622)    
-![](http://popoklopsi.de/stamm/downloader/Pictures/2012100900036.jpg)
+	![](http://popoklopsi.de/stamm/downloader/Pictures/flash.jpg)    
 
-- Chat Tags - Have a chat tag and a own vip chat    
-**Supported Games**: All Games     
-![](http://popoklopsi.de/stamm/downloader/Pictures/2012091900019.jpg)
 
-- Colored Smokes - Have colored smokes    
-**Supported Games**: CS:S    
-![](http://popoklopsi.de/stamm/downloader/Pictures/2012100900057.jpg)
+- **Chat Message**: Give VIP's a join and leave message    
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
 
-- Grenade Trail - Have a grenade trail    
-**Supported Games**: CS:S and CS:GO    
-![](http://popoklopsi.de/stamm/downloader/Pictures/2012091900009.jpg)
 
-- Holy Grenade - Throw a Holy Grenade    
-**Supported Games**: CS:S and CS:GO    
-![](http://popoklopsi.de/stamm/downloader/Pictures/2012091900010.jpg)
+- **Chats**: Give VIP's a VIP Tag and a own Chat    
+	**Supported Games**: CS:S and CS:GO    
+	Needs Plugin [Simple Chat Processor](http://forums.alliedmods.net/showthread.php?t=198501)    
 
-- Instant Defuse - Instantly defuse the bomb    
-**Supported Games**: CS:S and CS:GO
+	![](http://popoklopsi.de/stamm/downloader/Pictures/messages.jpg)    
 
-- Joinsound - Have a joinsound    
-**Supported Games**: All Games    
 
-- KillHP - Get HP when killing someone    
-**Supported Games**: All Games    
+- **Chat Colors**: Change Chat colors and Chat tags    
+	**Supported Games**: CS:S, TF2 and DOD:S    
+	Needs Plugin [Simple Chat Processor](http://forums.alliedmods.net/showthread.php?t=198501)   
+ 
+	![](http://popoklopsi.de/stamm/downloader/Pictures/chatcolors.jpg)    
 
-- Knife Infect - Infect players with a knife    
-**Supported Games**: CS:S and CS:GO    
-![](http://popoklopsi.de/stamm/downloader/Pictures/2012100900040.jpg)
+- **Grenadetrail**: Give VIP's a Grenade Trail    
+	**Supported Games**: CS:S and CS:GO    
 
-- Less Gravity - Get each level less gravity    
-**Supported Games**: All Games    
-![](http://popoklopsi.de/stamm/downloader/Pictures/2012091900018.jpg)
+	![](http://popoklopsi.de/stamm/downloader/Pictures/grenade.jpg)    
 
-- More Ammo - Have more ammo    
-**Supported Games**: All Games    
-![](http://popoklopsi.de/stamm/downloader/Pictures/2012091900020.jpg)
 
-- More Speed - Have more speed    
-**Supported Games**: All Games
+- **Holy Grenade**: Give VIP's a Holy Grenade    
+	**Supported Games**: CS:S and CS:GO    
 
-- No Fall Damage - Have no Fall Damage    
-**Supported Games**: All Games    
-Thanks to: Franc1sco
+	![](http://popoklopsi.de/stamm/downloader/Pictures/holy.jpg)    
 
-- No Reload - Don't have to reload    
-**Supported Games**: CS:S, CS:GO, TF2
 
-- No Restrict - Allow restricted weapons    
-**Supported Games**: CS:S and CS:GO    
-Needs Plugin [Weapon Restrict](http://forums.alliedmods.net/showthread.php?p=950174)
+- **Hook, Grape, Rope**: Give VIP's a Hook, Grape or Rope    
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
+	Needs Plugin [Hook Grape Rope](https://forums.alliedmods.net/showthread.php?t=201154)   
+ 
 
-- Player Trail - Have a player trail    
-**Supported Games**: All Games    
-![](http://popoklopsi.de/stamm/downloader/Pictures/2012091900015.jpg)
+- **Icon**: Give VIP's a VIP icon about their head    
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
 
-- Regenerate HP - Regenerating your HP    
-**Supported Games**: All Games
+	![](http://popoklopsi.de/stamm/downloader/Pictures/icon.jpg)    
 
-- Reserve Slot - Have a reserve slot    
-**Supported Games**: All Games
 
-- Show Damage - Show Damage done to a player    
-**Supported Games**: All Games    
-![](http://popoklopsi.de/stamm/downloader/Pictures/2012100900011.jpg)
+- **Instant Defuse**: Let VIP's defuse the bomb instantly    
+	**Supported Games**: CS:S and CS:GO    
 
-- Spawn HP - Have more HP on spawn    
-**Supported Games**: All Games
 
-- Teleport - Create teleport points and teleport to it    
-**Supported Games**: All Games    
-![](http://popoklopsi.de/stamm/downloader/Pictures/2012100900038.jpg)
+- **Joinsound**: Give VIP's a joinsound    
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
 
-- Throwing Knifes - Throw knifes    
-**Supported Games**: CS:S
-Needs Plugin [Throwing Knives](https://forums.alliedmods.net/showthread.php?t=125226)    
-![](http://popoklopsi.de/stamm/downloader/Pictures/2012091900002.jpg)
 
-- VIP Model - Have a model with "VIP" on it    
-**Supported Games**: CS:S and CS:GO    
-**Included Model is only for CSS**!    
-![](http://popoklopsi.de/stamm/downloader/Pictures/2012091900022.jpg)
+- **Kill HP**: Give VIP's HP for every kill    
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
 
-- VIP Money - Get every round money    
-**Supported Games**: CS:S and CS:GO    
-![](http://popoklopsi.de/stamm/downloader/Pictures/2012091900023.jpg)
 
-- VIP Icon - Have an icon above your head    
-**Supported Games**: All Games    
-![](http://popoklopsi.de/stamm/downloader/Pictures/2012091900012.jpg)
+- **Less Gravity**: Give VIP's less gravity   
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)     
 
-- VIP Tag - Have a VIP Tag    
-**Supported Games**: CS:S and CS:GO    
-![](http://popoklopsi.de/stamm/downloader/Pictures/2012091900016.jpg)
+	![](http://popoklopsi.de/stamm/downloader/Pictures/gravity.jpg)    
 
-- Weapons - Give weapons with chat commands    
-**Supported Games**: CS:S and CS:GO    
-![](http://popoklopsi.de/stamm/downloader/Pictures/2012091900008.jpg)
 
-- Welcome and Leave Message - Have a welcome and leave message    
-**Supported Games**: All Games
+- **Resize Player**: Resize the player model of VIP's    
+	**Supported Games**: CS:S, TF2 and CS:GO   
+ 
+	![](http://popoklopsi.de/stamm/downloader/Pictures/resize.jpg)    
+
+
+- **VIP Models**: Give VIP's VIP Models    
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
+	Included Models are only for CS:S!    
+
+	![](http://popoklopsi.de/stamm/downloader/Pictures/model.jpg)    
+
+
+- **Money**: Give VIP's extra Money    
+	**Supported Games**: CS:S and CS:GO    
+
+	![](http://popoklopsi.de/stamm/downloader/Pictures/money.jpg)    
+
+
+- **More Ammo**: Give VIP's extra Ammo    
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
+
+	![](http://popoklopsi.de/stamm/downloader/Pictures/ammo.jpg)    
+
+
+- **More Speed**: Give VIP's extra Speed    
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
+
+
+- **No Reload**: VIP's don't have to reload    
+	**Supported Games**: CS:S, TF2 and CS:GO    
+
+
+- **No restricted weapons**: VIP's can carry restricted weapons    
+	**Supported Games**: CS:S and CS:GO    
+	Needs Plugin [Weapon Restrict](http://forums.alliedmods.net/showthread.php?t=105219)  
+  
+
+- Playertrail: Give VIP's a Playertrail    
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
+
+	![](http://popoklopsi.de/stamm/downloader/Pictures/trail.jpg)    
+
+
+- **HP Regeneration**: Regenerates the HP of a VIP    
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
+
+
+- **Showdamage**: Shows the damage a VIP done  
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
+
+	![](http://popoklopsi.de/stamm/downloader/Pictures/damage.jpg)    
+
+
+- **VIP Tag**: Give VIP's a VIP Clan Tag    
+	**Supported Games**: CS:S and CS:GO    
+
+	![](http://popoklopsi.de/stamm/downloader/Pictures/tag.jpg)    
+
+
+- **Throwing Knifes**: Give VIP's throwing knifes    
+	**Supported Games**: CS:S    
+
+	![](http://popoklopsi.de/stamm/downloader/Pictures/knifes.jpg)    
+
+
+- **Weapon Giver**: VIP's can give themself weapons    
+	**Supported Games**: CS:S and CS:GO    
+
+	![](http://popoklopsi.de/stamm/downloader/Pictures/weapons.jpg)    
+
+
+- **Colored Smokes**: Give VIP's colored smokegrenades    
+	**Supported Games**: CS:S    
+
+	![](http://popoklopsi.de/stamm/downloader/Pictures/smoke.jpg)    
+
+
+- **Knife Infection**: VIP's can infect players with knife    
+	**Supported Games**: CS:S and CS:GO    
+
+	![](http://popoklopsi.de/stamm/downloader/Pictures/knife.jpg)    
+
+
+- Teleport: VIP's can teleport themself    
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
+
+	![](http://popoklopsi.de/stamm/downloader/Pictures/teleport.jpg)    
+
+
+- **No Falldamage**: VIP's have no falldamage    
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
+
+
+- **Spawn HP**: Give VIP's more HP on Spawn    
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
+
+
+- **Points Loser**: Non VIP's lose points    
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
+
+
+- **Distance**: Show VIP's the distance and direction to the nearest player    
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
+
+	![](http://popoklopsi.de/stamm/downloader/Pictures/distance.jpg)    
+
+
+- **Easy bunnyhop**: Give VIP's easy Bunny Hop    
+	**Supported Games**: CS:S and CS:GO    
+
+
+- **Round end immunity**: Give VIP's god mode at round end    
+	**Supported Games**: TF2    
+
+
+- **Fast Ladder**: Non VIP's can climb the ladder fastly    
+	**Supported Games**: CS:S and CS:GO    
+
+
+- **Fire Weapon**: VIP's can burn players for a short time on bullet hit    
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
+
+
+- **Fast Shoot**: VIP's can shoot faster    
+	**Supported Games**: TF2    
+	Needs Extension [TF2Items](https://forums.alliedmods.net/showthread.php?t=115100)  
+
+  
+- **TF2 Item Attributes**: Change Attributes of VIPs Items    
+	**Supported Games**: TF2    
+	Needs Extension [TF2Items](https://forums.alliedmods.net/showthread.php?t=115100)    
+	Needs Plugin [TF2Items Info](https://forums.alliedmods.net/showthread.php?p=1689522)  
+
+  
+- **Froggyjump**: VIP's can double jump    
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
+
+	![](http://popoklopsi.de/stamm/downloader/Pictures/jump.jpg)  
+  
+
+- **LongJump**: Give VIP's LongJump    
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
+
+
+- **Flag Points**: Only Players with special flags can collect points    
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
+
+
+- **VIP Slots**: Give VIP's reserved slots    
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
