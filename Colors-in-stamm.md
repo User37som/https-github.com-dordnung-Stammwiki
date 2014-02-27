@@ -15,9 +15,11 @@ This stock simply returns, whether the **game Stamm is running on is CS:GO** or 
 
 So that you don't always have to check **whether morecolors is available or not**, there are two stocks to print to the chat.
 
-Instead of using `PrintToChat` or `PrintToChatAll` just use `STAMM_PrintToChat` or `STAMM_PrintToChatAll`.
+Instead of using `PrintToChat` or `PrintToChatAll` just use `STAMM_PrintToChat` or `STAMM_PrintToChatAll`, or `STAMM_PrintToChatEx` or `STAMM_PrintToChatAllEx`.
 
-The syntax is **exactly the same**, but it will **use the colors include on CS:GO** and **morecolors on the other games**.
+The syntax is **exactly the same**, but it will **use the colors include on CS:GO** and **morecolors on the other games**.    
+
+To format a colored string you can use `STAMM_FormatColor(String:message[], maxlength, author=-1)`    
 
 ---------
 ### [Go to the next Page](Scripting-Features)
