@@ -18,6 +18,8 @@ Please report me if you find any mistakes and i will fix that.
 	- [Set config and upload](wiki/How-to-install-a-Feature#set-config-and-upload)
 	
 - [**Current Feature List**](wiki/Current-Feature-List)
+- [**Stamm Changelog**](wiki/Stamm-Changelog)
+- [**Feature Changelogs**](wiki/Feature-Changelogs)
 
 
 ## For Developers
