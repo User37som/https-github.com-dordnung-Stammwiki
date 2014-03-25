@@ -129,7 +129,8 @@
 
 - **Throwing Knifes**: Give VIP's throwing knifes    
 	**Supported Games**: CS:S    
-
+	Needs Plugin [Throwing Knifes](https://forums.alliedmods.net/showthread.php?t=125226)    
+	
 	![](http://popoklopsi.de/stamm/downloader/Pictures/knifes.jpg)    
 
 
