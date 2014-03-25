@@ -1,4 +1,4 @@
-Attention, the whole wiki is for the **coming version 2.2 (Currently Alpha)**    
+Welcome to the Stamm Wiki.
 
 Please report me if you find any mistakes and i will fix that.
 
