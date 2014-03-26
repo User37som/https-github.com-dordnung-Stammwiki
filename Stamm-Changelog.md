@@ -1,5 +1,9 @@
 See what has changed between Stamm versions.
 
+
+## 2.21
+- Fixed a problem with the updater, so it updated not on server start
+
 ## 2.20
 - Really a lot of code improvements
 - Easy support of morecolors
