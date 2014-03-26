@@ -1,6 +1,9 @@
 See what has changed between Stamm feature versions.
 
 
+## `All Features`
+- Fixed a problem with the updater, so it updated not on server start
+
 ## `New Features`
 - TF2 Items
 - Chat Colors
