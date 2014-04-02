@@ -1,8 +1,25 @@
 See what has changed between Stamm feature versions.
 
+----
+
+## `Chat Messages` to 1.3.2
+- Fixed incorrect translation order
+
+## `Easybhop, Fastladder` to 1.1.2
+- Changed plugin name
+
+## `Regenerate` to 1.3.2
+- Fixed multiple running timer bug
+
+## `Adminflag` to 1.4.2
+- Fixed losing of flags
+
+----
 
 ## `All Features`
 - Fixed a problem with the updater, so it updated not on server start
+
+----
 
 ## `New Features`
 - TF2 Items
@@ -36,6 +53,8 @@ See what has changed between Stamm feature versions.
 - Updated translations
 - Added instant activation on level up
 
+----
+
 ## `No Restrict` 1.2.2
 - Added config for each weapon
 
@@ -65,6 +84,8 @@ See what has changed between Stamm feature versions.
 ## `Chats` 1.2.1
 - Fixed printing errors
 
+----
+
 ## `Chat Messages` `Chats`
 - Added blocks
 
@@ -86,6 +107,8 @@ See what has changed between Stamm feature versions.
 - Support for Stamm 2.10
 - Added AutoExecConfig
 - Added Auto Updater
+
+----
 
 ## `AdminFlags` 1.2
 - Now with Level Flags, for each level new flags
