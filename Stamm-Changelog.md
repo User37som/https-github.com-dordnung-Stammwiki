@@ -1,5 +1,12 @@
 See what has changed between Stamm versions.
 
+## 2.22
+- Fixed some possible bugs with admin flags
+- Also support "flags" in StammLevels.txt
+- Fixed wrong Native Errors
+- Moved storage file to sourcemod/data
+- Changed loaded text
+- Removed loading of all features on late load
 
 ## 2.21
 - Fixed a problem with the updater, so it updated not on server start
