@@ -2,7 +2,7 @@ See what has changed between Stamm feature versions.
 
 ----
 
-## `Chat Messages` to 1.3.2
+### `Chat Messages` to 1.3.2
 - Fixed incorrect translation order
 
 ## `Easybhop, Fastladder` to 1.1.2
