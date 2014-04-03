@@ -1,5 +1,8 @@
 See what has changed between Stamm versions.
 
+## 2.23 (Future Version)
+- Fixed that `STAMM_OnClientBecomeVIP` wasn't called when going back to zero level
+
 ## 2.22
 - Fixed some possible bugs with admin flags
 - Also support "flags" in StammLevels.txt
