@@ -105,7 +105,7 @@
 	Needs Plugin [Weapon Restrict](http://forums.alliedmods.net/showthread.php?t=105219)  
   
 
-- Playertrail: Give VIP's a Playertrail    
+- **Playertrail**: Give VIP's a Playertrail    
 	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
 
 	![](http://popoklopsi.de/stamm/downloader/Pictures/trail.jpg)    
@@ -113,6 +113,10 @@
 
 - **HP Regeneration**: Regenerates the HP of a VIP    
 	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
+
+
+- **Refuse**: VIP's can refuse the Game (for Jail Servers)    
+	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)  
 
 
 - **Showdamage**: Shows the damage a VIP done  
@@ -152,7 +156,7 @@
 	![](http://popoklopsi.de/stamm/downloader/Pictures/knife.jpg)    
 
 
-- Teleport: VIP's can teleport themself    
+- **Teleport**: VIP's can teleport themself    
 	**Supported Games**: ALL (CS:S, CS:GO, TF2 and DOD:S)    
 
 	![](http://popoklopsi.de/stamm/downloader/Pictures/teleport.jpg)    
