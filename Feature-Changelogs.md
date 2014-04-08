@@ -1,5 +1,8 @@
 See what has changed between Stamm feature versions.
 
+### `New Feature`
+- Refuse
+
 ### `Weapons` to 1.3.2
 - Added cvar to restrict weapon giver to team
 
