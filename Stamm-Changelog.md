@@ -1,6 +1,6 @@
 See what has changed between Stamm versions.
 
-## 2.23 (Future Version)
+## 2.23
 - Fixed that `STAMM_OnClientBecomeVIP` wasn't called when going back to zero level
 - Added cvar to allow bot kills
 
