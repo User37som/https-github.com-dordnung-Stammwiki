@@ -1,5 +1,8 @@
 See what has changed between Stamm feature versions.
 
+### `Losepoints` to 1.1.2
+- Fixed incorrect chat message
+
 ### `Tag` to 1.4.2
 - Added cvar to choose whether tag is enabled by default or not
 
