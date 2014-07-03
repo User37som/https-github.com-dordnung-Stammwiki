@@ -1,6 +1,6 @@
 See what has changed between Stamm versions.
 
-## 2.24
+## 2.25
 - Fixed a save error from previous version
 
 ## 2.24
