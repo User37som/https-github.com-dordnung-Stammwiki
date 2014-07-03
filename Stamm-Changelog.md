@@ -1,6 +1,9 @@
 See what has changed between Stamm versions.
 
 ## 2.24
+- Fixed a save error from previous version
+
+## 2.24
 - Fixed a bug that all player points were reset when only should reset one player
 
 ## 2.23
