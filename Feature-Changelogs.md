@@ -1,5 +1,8 @@
 See what has changed between Stamm feature versions.
 
+### `Models` to 1.3.2
+- Fixed handle errors
+
 ### `Losepoints` to 1.1.2
 - Fixed incorrect chat message
 
