@@ -1,5 +1,9 @@
 See what has changed between Stamm versions.
 
+## 2.26
+- Added support for new TF2 Steamids
+- Fixed wrong Tag in HUD
+
 ## 2.25
 - Fixed a save error from previous version
 
