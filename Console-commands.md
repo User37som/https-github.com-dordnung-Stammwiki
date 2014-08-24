@@ -25,16 +25,16 @@ There are a few commands to **use on the console:**
 
 ### Feature Commands
 
-- `stamm_feature_load <basename>`    
+- `stamm_load_feature <basename>`    
 	**Loads a Stamm feature** in the `plugins/stamm` folder.
 
-- `stamm_feature_unload <basename>`    
+- `stamm_unload_feature <basename>`    
 	**Unloads a Stamm feature** in the `plugins/stamm` folder.
 
-- `stamm_feature_reload <basename>`    
+- `stamm_reload_feature <basename>`    
 	**Reloads a Stamm feature** in the `plugins/stamm` folder.
 
-- `stamm_feature_list`    
+- `stamm_list_feature`    
 	Prints a **list of all features.**
 
 ### Database Commands
